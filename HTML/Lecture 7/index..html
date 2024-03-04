@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Let's learn it</title>
+</head>
+
+<body>
+    <h1>Forms to apply for attend Webinar</h1>
+    <!--
+    action attribute: Specifies the URL or file where the form data should be sent when the form is submitted.
+    method attribute:
+     POST method, form data is sent to the specified URL or file in the body of the HTTP request.
+     GET method, form data is appended to the URL as a query string and sent to the specified URL or file.
+    -->
+    <form action="post">
+        <!-- <div>: Division or generic container used to group content together for styling or layout purposes. -->
+        <div>
+            <label for="username">Enter your name</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <!-- value attribute: Specifies the initial value of the input element. -->
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="current year">Current year</label>
+            <br>
+            <select name="year" id="current year">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <label for="comments">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comments" cols="35" rows="5"></textarea>
+        </div>
+    </form>
+</body>
+
+</html>
