@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img height="300" src="image1.png" alt="Train Image">
     <!-- Embedding an image with a height of 300 pixels from "image1.png" -->
     <!-- "alt" attribute: Provides descriptive text for accessibility and SEO -->
+    <img height="300" src="image1.png" alt="Train Image">
+
+    <!-- <br>: Line break tag for creating a new line within text or inline content.  -->
+    <br>
+
+    <!-- tr => table row -->
+    <!-- th => table heading -->
+    <!-- td => table data -->
+    <table>
+        <caption>Employee Details</caption>
+
+        <thead>
+            <!-- header content -->
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Fav langauge</th>
+            </tr>
+        </thead>
+
+        <!--
+    Rowspan: Specifies the number of rows a cell should span.
+    Colspan: Specifies the number of columns a cell should span.
+    -->
+        <tbody>
+            <!-- body content -->
+            <tr>
+                <td>Chethan</td>
+                <td rowspan="2">Programmer</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>Raja</td>
+                <!-- <td>Programmer</td> -->
+                <td>Python</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- footer content -->
+            <tr>
+                <td colspan="2">Samarth</td>
+                <!-- <td>Programmer</td> -->
+                <td>Kotlin</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--
+    <thead>: Table header section for column headings.
+    <tbody>: Table body section for main data rows.
+    <tfoot>: Table footer section for summary or totals.
+    -->
+
+    <!-- LIST -->
+    <!-- ul => unordered list -->
+    <ul>
+        <!-- li => list item -->
+        <li>Hey,</li>
+        <li>I</li>
+        <li>am</li>
+        <li>Chethan</li>
+    </ul>
+
+    <!-- type attribute: disc (default), circle, square -->
+    <ul type="circle">
+        <li>Hey,</li>
+        <li>I</li>
+        <li>am</li>
+        <li>Chethan</li>
+    </ul>
+
+    <!-- ol => ordered list -->
+    <ol>
+        <li>Hey,</li>
+        <li>I</li>
+        <li>am</li>
+        <li>Chethan</li>
+    </ol>
+
+    <!-- Possible values for type attribute: 
+        1. "1" (default) - Regular numbers (1, 2, 3, ...)
+        2. "A" - Uppercase letters (A, B, C, ...)
+        3. "a" - Lowercase letters (a, b, c, ...)
+        4. "I" - Uppercase Roman numerals (I, II, III, ...)
+        5. "i" - Lowercase Roman numerals (i, ii, iii, ...) -->
+    <ol type="i">
+        <li>Hey,</li>
+        <li>I</li>
+        <li>am</li>
+        <li>Chethan</li>
+    </ol>
+
+    <!-- dl => definition list -->
+    <dl>
+        <!-- dt => definition term -->
+       <dt>Intro</dt>
+       <!-- dd => definition Description -->
+       <dd>Hey, I am Chethan</dd>
+    </dl>
 </body>
+
 </html>
