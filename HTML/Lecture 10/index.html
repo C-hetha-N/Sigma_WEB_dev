@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video,Audio,Media - HTML</title>
+</head>
+
+<body>
+    <!-- Attributes of <video>: src, controls, autoplay, loop, poster, width, height, preload -->
+    <!-- preload attribute:
+    - "auto": Load entire media when page loads.
+    - "metadata": Load only media metadata.
+    - "none": Do not preload media. -->
+    <video src="Video_life.mp4" height="350" controls loop></video>
+    <video src="Video_life.mp4" height="350" controls poster="Screenshot 2024-03-03 220037.png" width="300"></video>
+
+    <audio src="Audio_Toxic.mp3" controls></audio>
+
+
+    <!-- SVG elements are used to create scalable vector graphics in HTML.
+    Common SVG elements include:
+    - <svg>: Defines a container for SVG graphics.
+    - <circle>: Draws a circle.
+    - <rect>: Draws a rectangle.
+    - <line>: Draws a straight line.
+    - <path>: Defines a path or a shape.
+    - <text>: Displays text.
+    - <g>: Groups SVG elements together.-->
+    <svg height="100" width="100" style="background-color: yellow;">
+        <circle cx="50" cy="50" r="20" stroke="black" stroke-width="0" fill="red" />
+    </svg>
+
+    <img src="img1.svg" alt="My Svg Image">
+    <img src="img2.svg" alt="My Svg Image">
+    <!--"img1.svg" directly embeds SVG content within the HTML, but may not display correctly without an XML namespace declaration.
+    "img2.svg" includes SVG content with a proper XML namespace declaration, ensuring correct display on the screen. -->
+
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="350" height="400"
+        frameborder="0"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=zsrKthwNgNe_bJnN&amp;start=760"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <!-- Quick Quiz  -->
+    <!-- Create a website which shows videos of different category and audios of different categories.
+    You can use YouTube videos in an iframe using YouTube's embedding feature -->
+</body>
+
+</html>
