@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .yello {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow cred cpurple" >CSS Specificity</h1>
+</body>
+
+</html>
+<!-- /* Stage 1: Order of Appearance */
+     /* Last rule wins if two have same strength */
+
+     /* Stage 2: Specificity */
+     /* Inline > ID > Class/Attribute > Element > Universal */
+
+     /* Stage 3: Origin */
+     /* User > Author > Browser */
+
+     /* Stage 4: Importance */
+     /* !important always wins */
+ -->
+
+
+
+ <!-- Specificity Calculation
+# Universal Selector: 0
+#Element selectors and pseudo-elements: 1
+#Class selectors, attribute selectors, and pseudo-classes: 10
+#ID selectors: 100
+#Inline styles: 1000 
+-->
