@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units - CSS</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html {
+            font-size: 13px;
+        } */
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1024px; */
+            width: 80vw;
+            height: 5vh;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        span {
+            /* box-sizing: border-box; */
+            border: 2px solid black;
+            /* width: 1024px; */
+            /* width: 80vw;
+            margin: 23px auto; */
+            background-color: aqua;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1024px; */
+            width: 80vw;
+            height: 30vh;
+            margin: 23px auto;
+            /* font-size: 18px; */
+            background-color: aquamarine;
+        }
+
+        .container>p {
+            font-size: 1.5em;
+        }
+
+        .myCont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 15px auto;
+            font-size: 25px;
+            width: 100vmin;
+            /* width: 100vh; */
+            color: rgb(95, 95, 13);
+        }
+
+        .yourCont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 15px auto;
+            font-size: 25px;
+            /* font-size: 20px; */
+            min-height: 60vh;
+            color: rgb(134, 32, 32);
+        }
+
+        .percenCont {
+            border: 2px solid purple;
+            font-size: 20px;
+            margin: 23px auto;
+            width: 80vw;
+        }
+
+        .percenCont>div {
+            border: 2px solid blueviolet;
+            width: 50%;
+        }
+
+        .percenCont>div>p {
+            border: 2px solid blue;
+            width: 50%;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="box">This is a box
+        <p> box-sizing: border-box; &nbsp;
+            border: 2px solid black; &nbsp;
+            /* width: 1024px; */&nbsp;
+            width: 80vw;&nbsp;
+            height: 5vh;&nbsp;
+            margin: auto;</p>
+    </div>
+
+    <span>This is a span box so, it is Inline</span>
+
+    <div class="container">
+        <h2>I am Fixed Container</h2>
+        <P>
+            <h4>margin: 23px auto</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti error sunt odio enim iusto
+            placeat consequuntur voluptatum ut nulla? Nostrum praesentium aliquid voluptate porro ratione consequatur
+            magnam, quos dignissimos molestiae doloremque quaerat autem, recusandae voluptates voluptas, error id
+            blanditiis dolores cumque doloribus obcaecati illo!
+        </P>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam iure ex eveniet. Vero maiores
+            quos dolores error eius ipsam eos! Officiis necessitatibus omnis maxime laudantium voluptas dignissimos,
+            fugit quisquam excepturi, error rem veniam voluptatum deserunt voluptatem, atque voluptatibus placeat odio
+            accusantium nesciunt labore. Ex recusandae voluptas rem nesciunt laborum quod, voluptatibus distinctio
+            necessitatibus nihil sunt dolorem velit, unde eos at. Quam ipsam est veritatis hic vel, voluptas quibusdam
+            magni delectus, animi eos ullam cum debitis totam enim, magnam quod atque sit. Nulla eius perspiciatis
+            deserunt
+        </p>
+    </div>
+
+    <div class="myCont">
+        <h3>I am another Container</h3>
+        <p> width: 100vmin;
+            /* width: 100vh; */</p>
+    </div>
+
+    <div class="yourCont">
+        <h2>I am Flexible Container</h2>
+        <p>
+        <h4>min-height: 60vh</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis aut deserunt, voluptates eos,
+        quaerat minus labore illo assumenda officia tenetur et repellendus? Necessitatibus dignissimos veritatis
+        quasi, praesentium illum aliquid.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum et sed molestias consequatur, neque, fugit
+        quidem aliquid quia esse, maxime provident tempora asperiores aperiam repudiandae officiis tempore ullam
+        adipisci quam quod atque soluta! Iste consectetur nemo sint sunt voluptatem quo, ipsa sequi nesciunt itaque
+        dolores omnis rem aut dicta cum quas possimus aliquam consequatur voluptates natus aspernatur fuga minima
+        autem. Dolorum tempora quo enim perspiciatis voluptates nesciunt minus natus unde corrupti, harum,
+        exercitationem officiis quidem? Quis dolore porro, iusto distinctio, est laboriosam atque aspernatur minus
+        assumenda dicta aut totam. Maiores ad similique atque porro ut a officiis aperiam, iure minus quibusdam
+        assumenda nostrum debitis, doloremque voluptatem ullam delectus perspiciatis laudantium laborum ex eum earum
+        repudiandae cumque odio! Accusantium ducimus quod, doloribus dolorem et distinctio natus atque voluptatibus
+        fugit reprehenderit odit illo minus similique fuga pariatur neque. Quibusdam, excepturi, dolor libero
+        facilis eos quis laborum voluptatem quidem ullam quia accusamus, quam quae obcaecati? Dolorem ratione
+        commodi deserunt officiis! Vel fugiat repudiandae odit voluptatibus, aperiam ad cum labore sit praesentium
+        ipsam, ratione illo corrupti aliquam architecto natus ipsum nisi porro quas? Iste possimus atque officiis
+        voluptatibus nesciunt, necessitatibus, quisquam hic maiores ducimus voluptas a aut exercitationem aperiam,
+        rerum eos ratione perferendis vitae omnis cumque quaerat consequatur adipisci. Distinctio temporibus
+        molestiae aut laboriosam praesentium totam repellendus mollitia magnam pariatur deleniti deserunt impedit
+        earum ex officiis, porro maiores cum ullam voluptatum nesciunt possimus aperiam repudiandae unde voluptatem!
+        Numquam, sit error vitae dolore explicabo ratione itaque? Assumenda sed, officia delectus perferendis
+        eveniet optio eligendi ea iste culpa! Nam beatae, ea, consectetur assumenda perferendis nisi voluptates
+        ullam magnam eveniet sequi corrupti consequuntur deserunt incidunt est vel quisquam saepe nesciunt error
+        iure odio. Sit quam optio cupiditate aperiam eaque. Illo, nostrum vel temporibus natus eius placeat rem
+        soluta voluptatum fugit, deleniti fugiat reiciendis nulla cupiditate facilis! Dolor quisquam magnam nobis
+        similique officiis repellat! Culpa, voluptate quis dolorem autem provident exercitationem veniam possimus
+        quaerat illum at cumque laboriosam explicabo expedita nihil vero aliquid sapiente voluptatum rem amet
+        inventore molestias libero suscipit? Iure ut quas temporibus soluta nam, tenetur fugit quidem incidunt atque
+        nemo? Quae doloribus, provident optio sapiente beatae quasi harum explicabo quam quis in perferendis ducimus
+        animi ratione qui cum et rerum soluta! Debitis eligendi nisi, doloremque dolore fugiat vitae magni id. Vel
+        ipsa, ullam unde molestias soluta reiciendis libero quaerat. Consequuntur dolorum porro aliquid iusto
+        aspernatur eveniet voluptas quos soluta aut corrupti autem, quaerat dolorem ipsum earum! Debitis quidem
+        magni placeat laboriosam alias consectetur sequi? Sunt optio unde itaque, excepturi aliquam et ab harum
+        soluta, autem consequatur dolor suscipit iusto recusandae rem praesentium quaerat, ea repudiandae ipsa
+        assumenda nisi obcaecati doloribus aut reprehenderit. Inventore voluptatib
+        </p>
+    </div>
+
+    <div class="percenCont">
+        <h1>Percentage Container - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <div>
+            <h4> .percenCont > div {
+                <br>border: 2px solid blueviolet;
+                <br>width: 50%;
+                }
+            </h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla tempore, ut recusandae molestiae unde?
+            Ipsa, quas labore corrupti soluta eligendi iste sunt eveniet culpa eos consequuntur neque tempora itaque
+            voluptatum est. Consequatur esse minus mollitia? Possimus perspiciatis doloribus culpa voluptatum nobis
+            quidem enim porro!
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat necessitatibus amet rem fugit, sed
+                inventore sunt iure, magni doloremque adipisci nulla reiciendis quod voluptate accusamus commodi
+                provident saepe quis vitae!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
