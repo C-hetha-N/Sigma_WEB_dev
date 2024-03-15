@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution of Exercise 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid rgb(90, 1, 132);
+            /* position: absolute; */
+
+            
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+        .box{
+            width: 70vw;
+            height: 440px;
+            border: 2px solid black;
+            padding: 3PX;
+            margin: 3PX;
+        }
+
+        .box1{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 80px;
+
+            /* position:absolute; */
+            background-color: aquamarine;
+            /* top: 0px;             */
+        }
+        .box2{
+            /* position: relative; */
+            background-color: aqua;
+            top: 35px;
+            left: 20px;
+            /* z-index: 1; */
+        }
+        .box3{
+            /* position: relative; */
+            position: fixed;
+            background-color: blue;
+            bottom: 15vh;
+            left: 15vw;
+        }
+        .box4{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
