@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            box-sizing: border-box;
+            width: 50vw;
+            padding: 1vw;
+            margin: auto;
+            outline: 1px solid lightgray;
+            border-radius: 10px;
+            background-color: #FEFCFF;
+            overflow: auto;
+        }
+
+        .image img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .capsules{
+            padding: 1px 0px 1px 10px;
+            margin-bottom: 10px;
+        }
+
+        .capsules span{
+            display: inline-block;
+            border: 1px solid lightgray;
+            border-radius: 15px;
+            padding: 5px 10px;
+            margin: 3px;
+            color: grey;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .content{
+            padding: 1px 10px 1px 10px;
+            overflow: hidden; 
+        }
+
+        .content h2{
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .content p{
+            color: grey;
+            font-size: 14px;
+        }
+
+        .button {
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .button button{
+            background-color: rgb(223, 249, 252);
+            color: rgba(52, 91, 247, 0.751);
+            border-radius: 23px;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 14px;
+            border: 1px solid rgb(205, 245, 249);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button button:hover{
+            background-color: rgb(200, 244, 255);
+            color: rgba(37, 78, 242, 0.751);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+
+    <article>
+        <div class="card">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/man-floats-boat-river-rainforest-beautiful-jungle-nature-realistic-background-wallpaper-illustration-peaceful-287267759.jpg" alt="" width="800" height="533">
+            </div>
+
+            <div class="capsules">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+
+            <div class="content">
+                <h2>Lago di Braies</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quibusdam error
+                    natus maiores repellat? Minima suscipit ea illo minus accusamus.</p>
+            </div>
+
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
