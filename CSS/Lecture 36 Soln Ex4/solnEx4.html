@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gpt1</title>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+    <style>
+        /* Global CSS variables */
+        :root {
+            --main-color: white;
+            --accent-color: goldenrod;
+            --title-color: #71797E; /* steel grey */
+            --subtitle-color: #BCC6CC; /* Metallic silver */
+            --background-image-mobile: url(https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161365.jpg?w=996&t=st=1710679487~exp=1710680087~hmac=8a806f914c9bd9f99ed2b3e9cdf3b9a19a48988dccfafa3be3f19b3aef7ea51e);
+            --background-image-desktop: url(https://img.freepik.com/free-vector/stream-binary-code-design_53876-97406.jpg?size=626&ext=jpg&ga=GA1.1.1216898405.1710655592&semt=ais);
+            
+            --sec-color: #a69cac;
+            --sec-accent-color: rgb(187, 3, 187);
+            --sec-title-color: rgb(255, 96, 183);
+            --sec-subtitle-color: rgb(255, 192, 228);
+        }
+
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            color: pink;
+            background-image: var(--background-image-desktop);
+            background-size: auto;
+            background-repeat: no-repeat repeat-y;
+            overflow: auto;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 20px;
+            text-shadow: 0px 7px 4px rgba(137, 137, 0, 0.815);
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: var(--subtitle-color);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Content styles */
+        .content {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            color: var(--title-color);
+        }
+
+        .content h3 {
+            color: var(--subtitle-color);
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 430px) {
+            body {
+                background-image: var(--background-image-mobile);
+            }
+
+            header {
+                text-shadow: 0px 7px 5px rgba(0, 255, 255, 0.728);
+                color: var(--sec-accent-color);
+                font-size: 14px;
+                text-shadow: 0px 7px 4px rgba(251, 161, 231, 0.692);
+
+            }
+
+            nav a {
+                color: var(--sec-color);
+                display: block;
+                font-size: 13px;
+                padding-left: 20px;
+                padding-bottom: 2px ;
+            }
+
+            .content h2 {
+                color: var(--sec-title-color);
+                font-size: 25px;
+            }
+
+            .content h3 {
+                color: var(--sec-subtitle-color);
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+    </header>
+
+    <nav>
+        <a href="/">HOME</a>
+        <a href="/">ABOUT</a>
+        <a href="/">WORKS</a>
+        <a href="/">SERVICES</a>
+        <a href="/">BLOG</a>
+        <a href="/">TESTIMONIAL</a>
+        <a href="/">CONTACT</a>
+    </nav>
+
+    <div class="content">
+        <h2>Hey! I'm Chethan</h2>
+        <h3>Embarking on a Journey into Web Development</h3>
+    </div>
+</body>
+</html>
