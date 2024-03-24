@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow: auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #4CAF50;
+            padding: 10px;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 4px 10px;
+            display: inline-block;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        .squares {
+            text-align: center;
+            min-height: 50vh;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 10px;
+            background-color: rgb(255, 223, 228);
+            min-width: 45%;
+            min-height: 55vh;
+            border-radius: 7px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Links */
+        .box a {
+            display: block;
+            margin-bottom: 10px;
+            color: #2f2e2e;
+            text-decoration: none;
+        }
+
+        .box a:hover {
+            color: #4CAF50;
+        }
+
+        .otherLinks {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: auto;
+        }
+
+        .otherLinks a {
+            padding-left: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            color: silver;
+            text-decoration: none;
+        }
+
+        .otherLinks a:hover {
+            color: #4CAF50;
+        }
+        
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+
+        .logo-container {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+            /* Ensure it's above other content */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                font-size: 14px;
+            }
+
+            nav {
+                font-size: 12px;
+                max-height: 250px;
+                overflow: auto;
+            }
+
+            nav a {
+                padding: 4px 5px;
+                margin: 3px auto;
+            }
+
+            section{
+                padding: 3px;
+            }
+
+            main{
+                padding: 10px;
+            }
+
+            .box {
+                width: 90%;
+            }
+
+            footer {
+                font-size: 12px;
+                padding: 3px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Works</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="logo-container">
+            <img src="https://clipground.com/images/sigma-png-7.png" alt="Logo" width="50px">
+        </div>
+
+        <section class="squares">
+            <div class="box box1">BOX 1
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            </div>
+            <div class="box box2">BOX 2
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            </div>
+        </section>
+
+        <section class="otherLinks">
+            <article>
+                <h2>Discover</h2>
+                <a href="#">Products</a>
+                <a href="#">Trials</a>
+                <a href="#">Services</a>
+                <a href="#">Industries</a>
+                <a href="#">Our discounts</a>
+                <a href="#">Financing</a>
+            </article>
+
+            <article>
+                <h2>About Us</h2>
+                <a href="#">Careers</a>
+                <a href="#">Newsroom</a>
+                <a href="#">What's New</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">About Us</a>
+            </article>
+
+            <article>
+                <h2>Connect with Us</h2>
+                <a href="#">Consulting</a>
+                <a href="#">Support</a>
+                <a href="#">Find a Business Partner</a>
+                <a href="#">Developers</a>
+                <a href="#">Business Partners</a>
+            </article>
+
+            <article>
+                <h2>Follow Us on</h2>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thanks! Your next visit promises even more beauty and joy on our website. See you soon!</p>
+    </footer>
+</body>
+
+</html>
