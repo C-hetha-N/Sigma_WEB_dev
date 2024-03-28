@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: auto;
+        }
+
+        header {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding-bottom: 2vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .right a{
+            display: flex;
+            align-items: center;
+        }
+
+        .right a svg{
+            padding: 3px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: goldenrod;
+            text-shadow: 0 1px 3px rgba(218, 165, 32, 0.301)
+        }
+
+        .logo {
+            width: 160px;
+            height: 50px;
+        }
+
+        .icon {
+            height: 30px;
+        }
+
+        .icon:hover{
+            background-color: goldenrod;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+            box-shadow: 0 2px 5px rgba(218, 165, 32, 0.301);
+        }
+
+        main {
+            margin-top: 6vh;
+            text-align: center;
+        }
+
+        main article {
+            padding: 0vh 15vw;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(0, 184, 217);
+            border: none;
+            border-radius: 6px;
+            margin: 5px;
+            padding: 7px 10px;
+        }
+
+        button:hover {
+            color: lightgray;
+            background-color: rgb(0, 112, 160);
+        }
+
+
+        @media only screen and (max-width:430px) {
+            nav {
+                justify-content: space-around;
+                gap: 10px 10px;
+            }
+
+            .logo {
+                width: 90px;
+                height: 30px;
+            }
+
+            main article {
+                padding: 0vh 5vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <img class="logo"
+                src="https://www.btsoftware.com/images/ue.png"
+                alt="logo">
+            <!-- logo is in yellow and black color -->
+
+            <div class="right">
+                <a href="#">Products <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+                <a href="#">Pricing <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+                <a href="#">Resources <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+                <a href="#">About us <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+
+                <img class="icon"
+                    src="https://media.istockphoto.com/id/831648336/vector/translate-icon-vector-translation-from-japanese-to-english-flat-icon.jpg?s=612x612&w=0&k=20&c=EArygXGP2icnbN8JTe4t2ajifXp6ay8zODYLAE6AnWw="
+                    alt="language icon" height="30px">
+            </div>
+               
+        </nav>
+    </Header>
+
+    <main>
+        <article>
+            <h1>Download UltraEdit for Windows</h1>
+
+            <p>Download and try UltraEdit before you buy it! This download includes the full windows version of the text
+                editor.</p>
+        </article>
+        <button>Download Windows version</button>
+        <div>
+            <button>Download Mac or Linux version</button>
+
+        </div>
+    </main>
+</body>
+
+</html>
