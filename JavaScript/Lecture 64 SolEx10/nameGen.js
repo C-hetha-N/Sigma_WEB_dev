@@ -6,7 +6,7 @@
     Amazing
     Fire
 
-    Shop Name:
+    Shop type:
     Engine
     Foods
     Garments
@@ -17,27 +17,41 @@
     Hub
 */
 
-let adj = {
-    Crazy,
-    Amazing,
-    Fire
+let rand1 = Math.random();
+let first, second, third;
+
+if(rand1 <= 0.33) {
+    first = "Crazy";
+}
+else if (rand1 <= 0.66) {
+    first = "Amazing";
+} 
+else {
+    first = "Fire"
 }
 
-let shop = {
-    Engine,
-    Foods,
-    Garments
+let rand2 = Math.random();
+if(rand2 <= 0.33) {
+    second = "Engine";
+}
+else if (rand2 <= 0.66) {
+    second = "Foods";
+} 
+else {
+    second = "Garments"
 }
 
-let word = {
-    Bros,
-    Limited ,
-    Hub
+let rand3 = Math.random();
+if(rand3 <= 0.33) {
+    third = "Bros";
+}
+else if (rand3 <= 0.66) {
+    third = "Limited";
+} 
+else {
+    third = "Hub"
 }
 
-for (i in adj) {
-    let name = abj.conct(shop,word);
-    let ran = name.random();
-}
+console.log(`${first} ${second} ${third}`)
 
-console.log(ran);
+
