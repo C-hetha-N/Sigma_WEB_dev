@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bundling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            padding: 24px;
+            margin: 10px;
+            border: 2px solid rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: lightblue;
+            padding: 24px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .container {
+            background-color: blue;
+            padding: 24px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a Child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("child is clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer is clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("container is clicked")
+        })
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`;
+        }
+
+        let a = setInterval(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 1000);
+
+        let b = setTimeout(() => {
+            document.querySelector(".child").style.color = getRandomColor();
+        }, 2000);
+
+        console.log(a);
+    </script>
+</body>
+
+</html>
