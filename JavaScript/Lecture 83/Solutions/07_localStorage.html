@@ -1,0 +1,91 @@
+<!-- 7. The Local Storage Manager:
+    You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local Storage</title>
+        <style>
+            *{
+                font-size: 20px;
+    
+            }
+    
+    
+            button {
+                padding: 3px 9px;
+                background-color: rgb(239, 239, 119);
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <button>Add Note</button>
+        <div class="Notes">
+        </div>
+        <script>
+            // Save note to local storage
+            function saveNoteToLocalStorage(note) {
+                let notes = JSON.parse(localStorage.getItem("notes")) || [];
+                notes.push(note);
+                localStorage.setItem("notes", JSON.stringify(notes));
+            }
+    
+            // Get all notes from local storage
+            function getNotesFromLocalStorage() {
+                return JSON.parse(localStorage.getItem("notes")) || [];
+            }
+    
+            // Display all notes
+            function displayNotes() {
+                const notes = getNotesFromLocalStorage();
+                const notesContainer = document.querySelector(".Notes");
+                notesContainer.innerHTML = ""; // Clear existing notes
+                notes.forEach(note => {
+                    const noteElement = document.createElement("div");
+                    noteElement.textContent = "• "+ note;
+                    notesContainer.appendChild(noteElement);
+                });
+            }
+    
+            // Initial display of notes when the page loads
+            displayNotes();
+    
+            // Add event listener to the button to add a new note
+            document.querySelector("button").addEventListener("click", () => {
+                const note = prompt("Enter your note:");
+                if (note) {
+                    saveNoteToLocalStorage(note);
+                    displayNotes();
+                }
+            });
+    
+            
+            /*
+            if (localStorage.getItem("name")) {
+            let a = localStorage.getItem("name");
+            document.write("Welcome ", a);
+            }
+            else {
+            a = prompt("Enter your name");
+            localStorage.setItem("name", a);
+            document.write("Welcome ", a);
+            }
+            
+            b = { "harry": 1, "Rocky": 2 }
+            console.log(b);
+            console.log(JSON.stringify(b));
+            localStorage.setItem("guys", JSON.stringify(b))
+            console.log(localStorage.getItem("guys"));
+            console.log(JSON.parse(localStorage.getItem("guys")));
+            */
+        </script>
+    </body>
+    
+    </html>
+    
