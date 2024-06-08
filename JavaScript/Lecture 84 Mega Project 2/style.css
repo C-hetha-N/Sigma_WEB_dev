@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    /* background-color: black;
+    color: white; */
+}
+
+
+.left{
+    width: 25vw;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.right{
+    width: 75vw;
+}
+
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0px;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+}
+
+
+.home ul li img{
+    width: 30px;
+}
+
+.library{
+    min-height: 60vh;
+    position: relative;
+}
+
+.lib_head img{
+    width: 26px;
+}
+
+.lib_head{
+    gap: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.ftr-links{
+    display: flex;
+    gap: 13px 23px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-bottom: 13px;
+}
+
+.footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.footer button{
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 8px 24px;
+    margin: 6vh 2px 13vh 0px;
+
+}
