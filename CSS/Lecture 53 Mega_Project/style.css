@@ -15,12 +15,12 @@ body {
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 
 .main .box {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     opacity: 0.44;
     position: absolute;
@@ -35,11 +35,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 62px;
+    padding: 10px;
 }
 
 nav img {
-    color: red;
-    width: 105px;
+    color: rgb(229, 9, 20);
+    width: 150px;
     position: relative;
     z-index: 10;
 }
@@ -50,7 +51,7 @@ nav button {
 }
 
 .hero {
-    margin-top: 20vh;
+    margin-top: 18vh;
     font-family: "Martel Sans", sans-serif;
     color: white;
     display: flex;
@@ -133,11 +134,13 @@ nav button {
     flex-wrap: wrap;
 }
 
+
 .first {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding: 28px 0px;
     max-width: 80vw;
     color: white;
     font-family: "Martel Sans", sans-serif;
@@ -153,6 +156,7 @@ nav button {
     font-size: 24px;
 }
 
+
 .secImg {
     position: relative;
 }
@@ -166,6 +170,13 @@ nav button {
     position: absolute;
     top: 103px;
     right: 93px;
+    z-index: -1;
+}
+
+.secImg2 video {
+    width: 408px;
+    top: 60px;
+    right: 140px;
     z-index: -1;
 }
 
@@ -220,6 +231,9 @@ nav button {
 
 footer {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Segoe UI',"Martel Sans", sans-serif;
     max-width: 70vw;
     margin: auto;
     margin-top: 4.5rem;
@@ -228,13 +242,14 @@ footer {
  
 footer p{
     margin: 25px 0px;
+    font-size: 18px;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 13px;
-
+    margin: 15px 0px
 }
 
 .footer-items {
