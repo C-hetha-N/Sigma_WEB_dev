@@ -1,67 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     background-color: black;
     color: white;
 }
 
 
-.left{
+.left {
     width: 25vw;
     padding: 12px;
     font-weight: 700;
 }
 
-.right{
+.right {
     width: 75vw;
 }
 
 
-.home ul li{
+.home ul li {
     display: flex;
     gap: 15px;
     margin: 20px 0px;
     width: 20px;
     height: 20px;
     list-style: none;
+    cursor: pointer;
 }
 
 
-.home ul li img{
+.home ul li img {
     width: 30px;
 }
 
-.library{
+.library {
     min-height: 60vh;
     position: relative;
 }
 
-.lib_head img{
+.lib_head img {
     width: 26px;
 }
 
-.lib_head{
+.lib_head {
     gap: 18px;
     display: flex;
     align-items: center;
     font-size: 11px;
+    cursor: pointer;
 }
 
-.footer{
+.footer {
     position: absolute;
     bottom: 0;
     font-size: 13px;
     font-weight: 400;
 }
 
-.ftr-links{
+.ftr-links {
     display: flex;
     gap: 13px 23px;
     flex-wrap: wrap;
@@ -74,7 +76,7 @@ body{
     text-decoration: none;
 }
 
-.footer button{
+.footer button {
     display: flex;
     align-items: center;
     border-radius: 32px;
@@ -83,31 +85,114 @@ body{
     color: white;
     padding: 8px 24px;
     margin: 6vh 2px 13vh 0px;
-
+    cursor: pointer;
 }
 
-.right{
+.right {
     margin: 16px 0px;
 }
 
-.header{
-    padding: 5px 38px 8px 20px;
+.header {
+    padding: 6px 38px 9px 20px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0a0a0a;
 }
 
-.header .Signup{
+.header button {
+    font-weight: 500;
+    font-size: 16px;
+    width: 115px;
+    height: 50px;
     border: 1px solid black;
+    border-radius: 41px;
+    cursor: pointer;
+    gap: 2px;
+}
+
+.header .signup-btn {
     background-color: black;
     color: #a7a7a7;
 }
 
-.header button { 
-    font-weight: 500;
-    width: 115px;
-    height: 50px;
-    border-radius: 41px;
+.signup-btn:hover {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.login-btn:hover {
+    font-weight: 600;
+    font-size: 17px;
+    width: 116px;
+    height: 51px;
+}
+
+.playlist {
+    padding: 16px;
+}
+
+.playlist h1 {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.card {
+    position: relative;
+    width: 190px;
     font-size: 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.cardContainer :hover{
+        background-color: #1a1a1a;
+}
+
+.cardContainer :hover {
+    .playBtn{
+        opacity: 1;
+        bottom: 90px;
+    }
+}
+
+.card>* {
+    padding-top: 4px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card p {
+    color: #a7a7a7;
+}
+
+.playBtn{
+    width: 42px;
+    position: absolute;
+    bottom: 59px;
+    right: 23px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
 }
