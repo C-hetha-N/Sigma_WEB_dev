@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+    <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -29,8 +29,13 @@
                     <img class="invert" src="plus.svg" alt="plus">
                 </div>
 
+                <div class="songsList">
+                    <ul>
+                       
+                    </ul>
+                </div>
+
                 <div class="footer">
-                    <div>
                         <div class="ftr-links">
                             <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
                             <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
@@ -47,9 +52,6 @@
                             <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
                             </div>
                         </div>
-                        <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
-                            rel="noopener"><span>Cookies</span></a>
-                    </div>
 
                     <button>
                         <!-- <img class="invert" src="lang.svg" alt=""> -->
@@ -69,12 +71,12 @@
                     <img class="invert" src="right_arrow.svg" alt=">">
                 </div>
                 <div class="buttons">
-                    <button class="signup-btn" >Sign Up</button>
-                    <button class="login-btn" >Log in</button>
+                    <button class="signup-btn">Sign Up</button>
+                    <button class="login-btn">Log in</button>
                 </div>
             </div>
 
-            <div class="playlist">
+            <div class="playlist popular-albums">
                 <h1>Popular albums</h1>
 
                 <div class="cardContainer">
@@ -123,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="playlist">
+            <div class="playlist spotify-playlist">
                 <h1>Spotify Playlist</h1>
 
                 <div class="cardContainer">
@@ -137,7 +139,13 @@
                 </div>
             </div>
 
-
+            <div class="playbar">
+                <div class="songs-buttons">
+                    <img src="prevPlay.svg" alt="">
+                    <img src="playIcon.svg" alt="">
+                    <img src="nextPlay.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 

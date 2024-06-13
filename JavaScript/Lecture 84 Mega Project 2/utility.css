@@ -38,25 +38,25 @@
 }
 
 .p-1{
-    padding: 30px;
+    padding: 24px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     background: #1a1a1a;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #424242;
+    background: #323232;
 }
 
 /* Handle on hover */
