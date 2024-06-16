@@ -41,7 +41,7 @@ body {
 }
 
 .library {
-    min-height: 65vh;
+    min-height: 66vh;
     position: relative;
 }
 
@@ -93,7 +93,7 @@ body {
 
 .right {
     margin: 16px 0px;
-    max-height: 100vh;
+    max-height: 90vh;
     overflow-y: scroll;
     /* overflow-x: hidden; */
 }
@@ -105,6 +105,10 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #0a0a0a;
+}
+
+.header .nav img{
+    cursor: pointer;
 }
 
 .header button {
@@ -146,7 +150,7 @@ body {
     cursor: pointer;
 }
 
-.cardContainer{
+.cardContainer {
     display: flex;
     gap: 2px;
     flex-wrap: wrap;
@@ -164,12 +168,12 @@ body {
     cursor: pointer;
 }
 
-.cardContainer :hover{
-        background-color: #1a1a1a;
+.cardContainer :hover {
+    background-color: #1a1a1a;
 }
 
 .cardContainer :hover {
-    .playBtn{
+    .playBtn {
         opacity: 1;
         bottom: 90px;
     }
@@ -194,7 +198,7 @@ body {
     color: #a7a7a7;
 }
 
-.playBtn{
+.playBtn {
     width: 42px;
     position: absolute;
     bottom: 59px;
@@ -203,36 +207,38 @@ body {
     transition: all 0.3s ease-out;
 }
 
-.playbar{
+.playbar {
     position: fixed;
-    bottom: 0px;
-    background-color: #13ac55;
-    width: 75vw;
+    bottom: 4px;
+    background-color: #2a2b2a;
+    width: 72vw;
+    height: 37px;
     padding: 8px;
+    border-radius: 10px;
 }
 
-.songs-buttons{
+.songs-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.songs-buttons img{
+.songs-buttons img {
     width: 30px;
     cursor: pointer;
 }
 
-.songsList{
+.songsList {
     height: 36vh;
     overflow: auto;
 }
 
-.songsList ul{
+.songsList ul {
     padding: 0px 0px 30px 0px;
 }
 
-.songsList ul li{
+.songsList ul li {
     list-style-type: decimal;
     display: flex;
     align-items: center;
@@ -249,20 +255,50 @@ body {
     margin: 12px 0px;
 }
 
-.songInfo{
+.songInfo {
     display: flex;
     gap: 14px;
     width: 150px;
 }
 
-.playNow{
+.playNow {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.playNow span{
+.playNow span {
     font-size: 10px;
     font-weight: 500;
     padding: 10px;
+}
+
+.seekbar {
+    height: 1.7px;
+    width: 72.7vw;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    cursor: pointer;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    left: 0%;
+    transition: left 0.3s;
+    cursor: pointer;
+}
+
+.aboveSeekbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
