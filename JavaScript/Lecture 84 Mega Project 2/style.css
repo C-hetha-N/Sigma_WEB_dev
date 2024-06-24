@@ -24,6 +24,9 @@ body {
     position: relative;
 }
 
+.left .cancel {
+    display: none;
+}
 
 .home ul li {
     display: flex;
@@ -107,9 +110,14 @@ body {
     background-color: #0a0a0a;
 }
 
-.header .nav img{
+.header .nav img {
     cursor: pointer;
 }
+
+.humburger {
+    display: none;
+}
+
 
 .header button {
     font-weight: 500;
@@ -212,7 +220,7 @@ body {
     bottom: 4px;
     background-color: #2a2b2a;
     width: 72vw;
-    height: 37px;
+    min-height: 37px;
     padding: 8px;
     border-radius: 10px;
 }
@@ -261,6 +269,10 @@ body {
     width: 150px;
 }
 
+.songInfo div {
+    word-break: break-all;
+}
+
 .playNow {
     display: flex;
     align-items: center;
@@ -297,8 +309,105 @@ body {
     cursor: pointer;
 }
 
-.aboveSeekbar{
+.aboveSeekbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.volume{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.volume img, .volume input {
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------- */
+
+@media (max-width: 980px) {
+    .left {
+        width: 370px;
+        position: absolute;
+        left: -200%;
+        transition: all .3s;
+        z-index: 1;
+    }
+
+    .left .cancel {
+        display: block;
+        position: absolute;
+        right: 51px;
+        top: 46px;
+        width: 29px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 5px;
+    }
+
+    .humburger {
+        display: block;
+    }
+
+
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: 97vw;
+    }
+
+    .seekbar {
+        width: 99vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .left {
+        width: 300px;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .playlist {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .cardContainer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .playbar {
+        width: 93vw;
+    }
+
+    .aboveSeekbar {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .timeVol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

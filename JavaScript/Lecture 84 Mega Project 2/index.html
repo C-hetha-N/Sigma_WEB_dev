@@ -13,9 +13,9 @@
     <div class="container flex bg-black">
 
         <div class="left">
-
+            <img class="cancel" src="cancel.svg" alt="">
             <div class="home bg-grey rounded p-1 m-1">
-                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <div class="logo"><img class="invert" width="110px" src="logo.svg" alt="logo"></div>
                 <ul>
                     <li><img class="invert" src="home.svg" alt="home">Home</li>
                     <li class="clr-grey"><img class="invert" src="search.svg" alt="home">Search</li>
@@ -67,8 +67,11 @@
         <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
-                    <img class="invert" src="left_arrow.svg" alt="<">
-                    <img class="invert" src="right_arrow.svg" alt=">">
+                    <img class="humburger" height="30px" src="humburger.svg" alt="">
+                    <div>
+                        <img class="invert" src="left_arrow.svg" alt="<">
+                        <img class="invert" src="right_arrow.svg" alt=">">
+                    </div>
                 </div>
                 <div class="buttons">
                     <button class="signup-btn">Sign Up</button>
@@ -80,47 +83,6 @@
                 <h1>Popular albums</h1>
 
                 <div class="cardContainer">
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="">
-                        <h2>love hotel</h2>
-                        <p>leftovermax</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
-                        <h2>Animal</h2>
-                        <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
-                        <h2>Animal</h2>
-                        <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
-                        <h2>Animal</h2>
-                        <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
-                        <h2>Animal</h2>
-                        <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="playBtn"><img src="playIcon.svg" alt=""></div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
-                        <h2>Animal</h2>
-                        <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
-                    </div>
 
                 </div>
             </div>
@@ -153,8 +115,15 @@
                         <img id="play" src="play.svg" alt="">
                         <img id="next" src="nextPlay.svg" alt="">
                     </div>
-                    <div class="songTime">
 
+                    <div class="timeVol">
+                        <div class="songTime"></div>
+                        <div class="volume">
+                            <img src="volumeOn.svg" alt="">
+                            <div class="volRange">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
