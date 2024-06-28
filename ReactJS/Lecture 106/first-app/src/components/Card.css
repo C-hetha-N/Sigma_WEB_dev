@@ -1,0 +1,22 @@
+.card {
+    width: 260px;
+    height: 320px;
+    padding: 12px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card button {
+    padding: 8px 4px;
+    margin: 12px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 16px;
+    background-color: rgb(253, 147, 253);
+}
