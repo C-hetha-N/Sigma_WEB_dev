@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Card.css"
 
-const Card = () => {
+const Card = (props) => {
     return(
         <>
-            <div className="card">
-                <h1>Title of the card</h1>
-                <p>Description of the card</p>
+            <div className="card" style={{overflow: "hidden"}}>
+                <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" alt="" width="260px"/>
+                <h1>{props.title}</h1>
+                <p>{props.description}</p>
                 <button>Read more</button>
             </div>
         </>

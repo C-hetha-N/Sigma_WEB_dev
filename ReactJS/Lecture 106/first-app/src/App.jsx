@@ -11,9 +11,10 @@ function App() {
         <p>This contains my site main content</p>
       </main>
       <div className="cards">
-        <Card />
-        <Card />
-        <Card />
+        <Card title="Card 1 Title" description="desc" />
+        <Card title="Card 2 Title" description="desc" />
+        <Card title="Card 3 Title" description="desc" />
+        <Card title="Card 4 Title" description="desc" />
       </div>
       <Footer />
     </>
