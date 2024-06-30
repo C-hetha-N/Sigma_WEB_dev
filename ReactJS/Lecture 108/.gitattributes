@@ -1,0 +1,13 @@
+# Handle all text files automatically
+* text=auto
+
+# Ensure LF endings for JavaScript, JSX, HTML, and CSS files
+*.js eol=lf
+*.jsx eol=lf
+*.html eol=lf
+*.css eol=lf
+
+# Treat images and other binaries as binary files
+*.png binary
+*.jpg binary
+*.gif binary

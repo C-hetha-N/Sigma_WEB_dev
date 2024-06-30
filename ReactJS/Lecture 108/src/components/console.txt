@@ -1,0 +1,21 @@
+case1 : every render
+case2 : first render
+color was changed
+count was changed
+
+[Violation] 'message' handler took 13124ms
+
+case1 : every render
+color was changed
+
+[Violation] 'message' handler took 3023ms
+
+case1 : every render
+count was changed
+
+[Violation] 'click' handler took 4429ms
+
+case1 : every render
+color was changed
+
+[Violation] 'message' handler took 8349ms
