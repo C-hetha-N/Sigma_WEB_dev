@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 1, 26);
+}
+
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 250px;
+  height: 300px;
+  border: 2px solid white;
+  margin: 3px;
+  padding: 5px;
+  background-color: rgb(4, 4, 45);
+} 
+
