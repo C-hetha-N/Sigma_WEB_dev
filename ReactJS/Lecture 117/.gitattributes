@@ -1,0 +1,10 @@
+*text=auto
+
+*.js eol=lf
+*.jsx eol=lf
+*.html eol=lf
+*.css eol=lf
+*.cfg eol=lf
+*.json eol=lf
+*.cjs eol=lf
+*.gitignore eol=lf
