@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 280px;
+  padding: 20px;
+  background-color: rgb(164, 192, 8);
+  border-radius: 12px;
+}
+
+.container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.container label select{
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 4px;
+}
+.container label input{
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.container label p{
+  font-size: 12px;
+}
+
+.submit_btn{
+  margin: auto;
+  padding: 4px;
+  background-color: rgb(220, 78, 18);
+  width: 80px;
+  border-radius: 12px;
+  cursor: pointer;
+}
