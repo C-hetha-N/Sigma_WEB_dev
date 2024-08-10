@@ -1,4 +1,7 @@
 import React from 'react'
+import Signin from './Signin'
+import { NavLink } from 'react-router-dom'
+
 
 const Navbar = () => {
     return (
@@ -8,8 +11,9 @@ const Navbar = () => {
                     <span className='font-bold'>iTask</span>
                 </div>
                 <ul className='flex gap-8'>
-                    <li className='cursor-pointer hover:font-semibold'>Home</li>
-                    <li className='cursor-pointer hover:font-semibold'>Your Tasks</li>
+                    <NavLink className='cursor-pointer hover:font-semibold' to="/"><li>Home</li></NavLink>
+                    <NavLink className='cursor-pointer hover:font-semibold' to="/tasks"><li>Your Tasks</li></NavLink>
+                    <NavLink className='cursor-pointer hover:font-semibold' to="/signin"><li>SignIn</li></NavLink>
                 </ul>
             </nav>
         </>
